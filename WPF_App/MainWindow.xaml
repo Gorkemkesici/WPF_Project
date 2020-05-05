@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_App"
+        mc:Ignorable="d"
+        Title="Öğrenci Bilgileri" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="672*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="37,64,30,63" Grid.ColumnSpan="3">
+            <Label Content="Ad:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="44" Width="120" Margin="1,0,604,0"/>
+            <Label Content="Soyad:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="44" Width="120" Margin="1,65,604,0"/>
+            <Label Content="Okul:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="44" Width="120" Margin="1,129,604,0"/>
+            <Label Content="Bölüm:" HorizontalAlignment="Center" Margin="0,194,605,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="44" Width="120"/>
+            <Label Content="Öğrenci No:" HorizontalAlignment="Center" Margin="0,254,605,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="34" Width="120"/>
+            <Label Content="Görkem" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Width="364" Margin="116,0,245,0"/>
+            <Label Content="Kesici" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Width="364" Margin="116,65,245,0"/>
+            <Label Content="Arel Üniversitesi" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Width="364" Margin="116,129,245,0"/>
+            <Label Content="Bilgisayar Programcılığı" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Width="364" Margin="116,194,245,0"/>
+            <Label Content="161130013" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Width="364" Margin="116,254,245,0"/>
+
+            <Image Margin="488,27,0,28" Source="assets/Image1.png" Stretch="Fill"/>
+            <Button x:Name="btn_login" Content="PROGRAMA GİRİŞ YAP" HorizontalAlignment="Center" Margin="531,243,41,16" VerticalAlignment="Center" Width="150" Background="#FF00529C" Foreground="White" Height="30" FontWeight="Bold" Click="Btn_login_Click"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
